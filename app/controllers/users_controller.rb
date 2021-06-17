@@ -12,9 +12,6 @@ class UsersController < ApplicationController
     @book=Book.new
   end
 
-  def create
-  end
-
   def edit
     @user=User.find(params[:id])
     unless @user.id == current_user.id
